@@ -4,8 +4,8 @@ if (!class_exists('Database')) {
     {
         private $host = "localhost";
         private $dbname = "hotel_booking";
-        private $username = "root";
-        private $password = "";
+        private $username = "booking_user";
+        private $password = "12345";
 
         public $conn;
 
