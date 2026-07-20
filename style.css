@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #12321f;
+}
+
+.page-shell,
+.dashboard {
+    min-height: 100vh;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.hero-card,
+.dashboard-card {
+    max-width: 720px;
+    width: min(720px, 92vw);
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+    padding: 24px;
+    border: 2px solid rgba(47, 191, 91, 0.75);
+    backdrop-filter: blur(6px);
+}
+
+.hero-content {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #dff8e8;
+    color: #1f7a3b;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+}
+
+h1 {
+    margin: 6px 0 10px;
+    font-size: 2.1rem;
+    color: #167a3d;
+}
+
+.hero-text {
+    margin: 0 auto 10px;
+    max-width: 640px;
+    color: #56715d;
+    font-size: 1rem;
+}
+
+.forms {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.single-form {
+    grid-template-columns: 1fr;
+    width: min(280px, 80vw);
+    max-width: 280px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.form-box {
+    background: rgba(244, 255, 247, 0.68);
+    padding: 14px;
+    border-radius: 12px;
+    border: 2px solid rgba(47, 191, 91, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    backdrop-filter: blur(2px);
+}
+
+.form-box h2 {
+    margin-top: 0;
+    color: #167a3d;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.switch-text {
+    text-align: center;
+    margin-top: 12px;
+    color: #56715d;
+}
+
+.switch-text a {
+    color: #167a3d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.booking-form {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.booking-form label {
+    font-weight: 600;
+    color: #2c4a3a;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #bfe8c8;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+    background: #ffffff;
+}
+
+input:focus {
+    border-color: #2fbf5b;
+    box-shadow: 0 0 0 3px rgba(47, 191, 91, 0.16);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    background: #2fbf5b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover {
+    background: #25a04a;
+}
+
+.message {
+    color: #0f6b31;
+    text-align: center;
+    font-weight: 700;
+    background: #e8f9ee;
+    padding: 10px 14px;
+    border-radius: 999px;
+    margin: 0 auto 16px;
+    display: inline-block;
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.form-link a {
+    color: #167a3d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.dashboard-header h1,
+.dashboard-header p {
+    margin: 0 auto;
+}
+
+.dashboard-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.logout-link {
+    margin-left: auto;
+}
+
+.search-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.dashboard-actions a {
+    text-decoration: none;
+}
+
+.dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+.dashboard th,
+.dashboard td {
+    border: 1px solid #dcefe2;
+    padding: 10px;
+    text-align: left;
+}
+
+.dashboard th {
+    background: #eafbf1;
+}
+
+.dashboard a {
+    color: #167a3d;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .forms {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card,
+    .dashboard-card {
+        padding: 24px;
+    }
+}
